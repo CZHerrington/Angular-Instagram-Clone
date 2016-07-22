@@ -1,0 +1,14 @@
+<h1 class="title">Upload Picture</h1>
+
+<form ng-submit="addPhoto(photo)">
+  <p class="control">
+    <input type="text" class="input" placeholder="Picture Name" ng-model="photo.name">
+  </p>
+  <p class="control">
+    <input type="text" class="input" placeholder="Picture URL" ng-model="photo.url">
+  </p>
+  <p class="control">
+    <input type="text" class="input" placeholder="add description" ng-model="photo.description">
+  </p>
+  <button class="button">Upload</button>
+</form>

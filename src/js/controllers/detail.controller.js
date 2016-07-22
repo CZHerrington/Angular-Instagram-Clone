@@ -1,13 +1,22 @@
-function DetailController ($scope, $http, SERVER, $state) {
+function DetailController ($scope, $stateParams, $http, SERVER) {
 
-  // remember initialize object to store image/data
+  $scope.singlePhoto = {};
 
-  init()
+  init();
 
-      function init () {
-        console.log("%cDetailController running", "color: #265896;")
-      }
+  function init () {
+
+    $http.get(SERVER.URL + $stateParams.id).then( (res) => {
+      $scope.singlePhoto = res.data;
+      console.log("detail ", $scope.singlePhoto)
+    });
+
+  }
+
 }
 
-DetailController.$inject = ['$scope', '$http', 'SERVER', '$state'];
+DetailController.$inject = ['$scope', '$stateParams', '$http', 'SERVER'];
 export { DetailController };
+
+
+// ADD CORRECT CODE TO HOME TO GENERATE THE LINK BASED ON ID, ALSO FUCKING EDIT THE CONFIG TO REPRESENT THAT

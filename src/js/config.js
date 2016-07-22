@@ -12,7 +12,7 @@ function config ($stateProvider, $urlRouterProvider) {
       controller: 'HomeController'
     })
     .state('root.detail', {
-      url: '/detail',
+      url: '/pic/:id',
       templateUrl: 'templates/detail.tpl.html',
       controller: 'DetailController'
     })
@@ -21,6 +21,11 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/upload.tpl.html',
       controller: 'UploadController'
     })
+//     .state('root.detail', {
+//   url: '/pic/:id',
+//   templateUrl: 'templates/detail.tpl.html',
+//   controller: 'DetailController'
+// });
 
   $urlRouterProvider.otherwise('/');
 

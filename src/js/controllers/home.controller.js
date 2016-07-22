@@ -1,12 +1,16 @@
 function HomeController ($scope, $http, SERVER, $state) {
 
-  // remember initialize object to store image/data
+  $scope.photos = [];
 
   init()
 
-      function init () {
-        console.log("%cHomeController running", "color: #265896;")
-      }
+  function init () {
+    $http.get(SERVER.URL).then( (res) => {
+      $scope.photos = res.data;
+      console.log("HOME: ", $scope.photos)
+    });
+  }
+
 }
 
 HomeController.$inject = ['$scope', '$http', 'SERVER', '$state'];
