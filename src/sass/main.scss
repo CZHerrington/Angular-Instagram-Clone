@@ -1,3 +1,8 @@
+// START Redefining Bulma Color Variables
+$grey-light: black;
+
+// END Redefining Bulma Color Variables
+
 @import "bulma";
 
 $Background: #bcd2d0;
@@ -62,6 +67,7 @@ footer{
   // img{
   //   position: absolute;
   //       z-index: 1;
+  //     REMEMBER TO ADD BLACK BG DIV THE SAME SIZE AS IMAGE SET TO OPACITY 0
   // }
 }
 .card:hover{
