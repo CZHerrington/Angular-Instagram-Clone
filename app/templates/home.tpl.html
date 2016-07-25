@@ -1,6 +1,6 @@
 <h1 class="title"></h1>
-
-<!-- START REMINDER -->
+<!--
+START REMINDER
 <br>
 <pre><p>
   Remember to add Like button (or double click) to photos, as well as overlay div with opacity.
@@ -8,14 +8,13 @@
   Also, add in author field [media-content possibly, check <a href="http://bulma.io/documentation/components/card/">Bulma Docs</a>].
   <br>
    Possibly randomize author field.
-   <br>
-   change "Home | Upload" nav element color to black.
+   <br> √ "Home Upload" nav element color to black. √
    <br>
    Basic Form Validation on Upload. At least disallow empty fields to be submitted. Fuck.
    <br>
 </p></pre>
-<br>
-<!-- END REMINDER -->
+<br> -->
+
 
 
 <div class="card" id="home-card" ng-repeat="photo in photos">
@@ -31,4 +30,8 @@
       </div>
     </div>
   </a>
+  <footer class="card-footer">
+  <a class="card-footer-item">Save</a>
+  <a class="card-footer-item" href="/#/pic/{{ photo._id }}">Details</a>
+</footer>
 </div>

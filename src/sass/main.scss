@@ -1,5 +1,26 @@
 // START Redefining Bulma Color Variables
-$grey-light: black;
+
+// $grey-light: black;
+// // $grey-dark: black;
+
+
+
+// $black
+// $grey-darker
+// $grey-dark
+// $grey
+// $grey-light
+// $grey-lighter
+// $white
+// $blue
+// $green
+// $orange
+// $purple
+// $red
+// $turquoise
+// $yellow
+
+
 
 // END Redefining Bulma Color Variables
 
@@ -27,11 +48,20 @@ html{
   background-color: $FootHead;
 }
 
+#black{
+  font-weight: 500;
+  color: black;
+}
+
+#black:hover{
+  color: $turquoise;
+}
+
 .wrapper {
   margin: 50px 0;
 };
-    nav a{
-      margin: 5px;
+nav a{
+  margin: 5px;
 };
 
 .pad-left{
@@ -43,6 +73,10 @@ footer{
   font-weight: 200;
   clear: both;
 };
+
+hr {
+  color: black;
+}
 // END LAYOUT FORMATTING
 // =====================
 
@@ -61,8 +95,8 @@ footer{
     font-weight: 300;
   }
   .card-content{
-    height: 76px;
-    max-height: 76px;
+    height: 50px;
+    max-height: 50px;
   }
   // img{
   //   position: absolute;
@@ -91,6 +125,23 @@ footer{
   }
 
 
+// UPLOAD FORM
+
+input.ng-invalid.ng-touched {
+  border-color: #FA787E;
+}
+input.ng-valid.ng-touched {
+  border-color: #78FA89;
+}
+.alert {
+  display: inline;
+  color: red;
+  font-size: 16px;
+  font-weight: 200;
+  text-shadow: 0px 0px 5px #ff4d4d;
+}
+
 textarea{
   height: 120px;
 }
+// UPLOAD FORM

@@ -1,14 +1,24 @@
 <h1 class="title">Upload a Photo</h1>
 
-<form ng-submit="addPhoto(photo)">
+<form ng-submit="addPhoto(photo)" name="UpForm">
   <p class="control">
-    <input type="text" class="input" placeholder="Picture Name" ng-model="photo.name">
+    <input type="text" class="input" placeholder="Picture Name" ng-model="photo.name" name="Name" required>
+    <span class="alert" ng-show="UpForm.$submitted || UpForm.Name.$touched">
+        <span ng-show="UpForm.Name.$error.required">This is a required field.</span>
+    </span>
   </p>
   <p class="control">
-    <input type="text" class="input" placeholder="Picture URL" ng-model="photo.url">
+    <input type="url" class="input" placeholder="Picture URL" ng-model="photo.url" name="Url" required>
+    <span class="alert" ng-show="UpForm.$submitted || UpForm.Url.$touched">
+        <span ng-show="UpForm.Url.$error.required">This is a required field.</span>
+        <span ng-show="UpForm.Url.$error.url">This is not a valid URL.</span>
+    </span>
   </p>
   <p class="control">
-    <input type="text" class="input" placeholder="add a description!" ng-model="photo.description">
+    <input type="text" class="input" placeholder="add a description!" ng-model="photo.description" name="Desc" required>
+    <span class="alert" ng-show="UpForm.$submitted || UpForm.Desc.$touched">
+        <span ng-show="UpForm.Desc.$error.required">This is a required field.</span>
+    </span>
   </p>
   <button class="button">Upload</button>
 </form>
