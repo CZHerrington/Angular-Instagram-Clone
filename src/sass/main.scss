@@ -49,14 +49,16 @@ html{
   background-color: 	#e5c3c6;
 }
 
-#nav-button{
+#navbutton{
   font-weight: 400;
   font-size: 18px;
   color: $grey-darker;
+  transition: all .25s;
 }
 
-#nav-button:hover{
+#navbutton:hover{
   color: $turquoise;
+  transition: all .25s;
 }
 
 .wrapper {
@@ -121,10 +123,12 @@ a.card-footer-item { //FA Heart element
   color:red;
     transition: all .5s;
 }
-a.card-footer-item:hover {
-  color:red;
-  transition: all .25s;
-}
+
+// IF I DECIDE TO ADD IN A TRANSITION
+// a.card-footer-item:hover {
+//   color:red;
+//   transition: all .25s;
+// }
 
 
 // END HOME FORMATTING
