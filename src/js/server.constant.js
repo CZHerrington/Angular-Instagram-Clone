@@ -4,7 +4,7 @@
 
 
 let ServerConstant = {
-  URL: 'https://class-server.herokuapp.com/collections/zach-insta-clone-test/'
+  URL: 'https://class-server.herokuapp.com/collections/zach-insta-clone/'
 };
 
 export { ServerConstant };
