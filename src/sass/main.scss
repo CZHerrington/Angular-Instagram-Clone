@@ -49,12 +49,13 @@ html{
   background-color: 	#e5c3c6;
 }
 
-#black{
-  font-weight: 500;
+#nav-button{
+  font-weight: 400;
+  font-size: 18px;
   color: $grey-darker;
 }
 
-#black:hover{
+#nav-button:hover{
   color: $turquoise;
 }
 
@@ -108,11 +109,21 @@ hr {
 }
 .image-dark {
   opacity: 1;
-  transition: all 1s;
+  transition: all .5s;
 }
 .image-dark:hover {
   opacity: 0.5;
-  transition: all 1s;
+  transition: all .5s;
+}
+
+
+a.card-footer-item { //FA Heart element
+  color:red;
+    transition: all .5s;
+}
+a.card-footer-item:hover {
+  color:red;
+  transition: all .25s;
 }
 
 
