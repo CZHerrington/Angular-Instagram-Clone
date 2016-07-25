@@ -8,9 +8,6 @@ START REMINDER
   Also, add in author field [media-content possibly, check <a href="http://bulma.io/documentation/components/card/">Bulma Docs</a>].
   <br>
    Possibly randomize author field.
-   <br> √ "Home Upload" nav element color to black. √
-   <br>
-   Basic Form Validation on Upload. At least disallow empty fields to be submitted. Fuck.
    <br>
 </p></pre>
 <br> -->
@@ -21,7 +18,7 @@ START REMINDER
   <a href="/#/pic/{{ photo._id }}">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img ng-src="{{ photo.url }}" alt="{{ photo.name }}">
+        <img ng-src="{{ photo.url }}" alt="{{ photo.name }}" class="image-dark">
       </figure>
     </div>
     <div class="card-content">
@@ -31,7 +28,7 @@ START REMINDER
     </div>
   </a>
   <footer class="card-footer">
-  <a class="card-footer-item">Save</a>
-  <a class="card-footer-item" href="/#/pic/{{ photo._id }}">Details</a>
+  <a class="card-footer-item">like-heart</a>
+  <span class="card-footer-item" href="/#/pic/{{ photo._id }}">Likes</span>
 </footer>
 </div>

@@ -1,7 +1,7 @@
 // START Redefining Bulma Color Variables
 
 // $grey-light: black;
-// // $grey-dark: black;
+// $grey-dark: black;
 
 
 
@@ -19,8 +19,6 @@
 // $red
 // $turquoise
 // $yellow
-
-
 
 // END Redefining Bulma Color Variables
 
@@ -47,10 +45,13 @@ html{
 .nav-right{
   background-color: $FootHead;
 }
+.nav-center {
+  background-color: 	#e5c3c6;
+}
 
 #black{
   font-weight: 500;
-  color: black;
+  color: $grey-darker;
 }
 
 #black:hover{
@@ -77,16 +78,17 @@ footer{
 hr {
   color: black;
 }
+
 // END LAYOUT FORMATTING
 // =====================
-
+// Begin HOME FORMATTING
 
 #home-card {
   width: 240px;
   float: left;
   border-radius: 5px;
   margin: 0 15px 15px 0;
-  cursor: pointer;
+  // cursor: pointer;
   text-align: center;
   &:nth-child(3n+1) {
     margin-right: 0;
@@ -95,17 +97,27 @@ hr {
     font-weight: 300;
   }
   .card-content{
-    height: 50px;
-    max-height: 50px;
+    height: 25px;
+    max-height: 25px;
   }
-  // img{
-  //   position: absolute;
-  //       z-index: 1;
-  //     REMEMBER TO ADD BLACK BG DIV THE SAME SIZE AS IMAGE SET TO OPACITY 0
-  // }
 }
-.card:hover{
+
+.card-image{
+  border-radius: 5px;
+  background-color: black;
 }
+.image-dark {
+  opacity: 1;
+  transition: all 1s;
+}
+.image-dark:hover {
+  opacity: 0.5;
+  transition: all 1s;
+}
+
+
+// END HOME FORMATTING
+// ===================
 
 
 #detail-card{
